@@ -1,0 +1,237 @@
+@import "variables/variables";
+@import "nav";
+@import "main";
+
+.grid-container {   
+    background-color: $color-secondary;
+    background-size: cover;
+    padding:40px ;
+    display: grid;
+    grid-gap:5px; 
+    justify-content: center;
+    
+    div {
+        background-color: $color-secondary;
+        border: solid 1px rgb(0, 0, 0);
+        padding: 5px;
+        background-size: 10px;
+    } 
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    font-family: Ubuntu;
+    background: $color-main;
+}
+
+
+
+/* ====*/
+/* Media queries */
+
+@media (max-width: 768px) {
+    
+    body {
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+   header {
+        display: flex;
+        nav {
+        grid-area: nav;
+        align-items: center;
+        justify-content: space-around;
+
+        ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            flex-flow: row wrap;
+    
+        .navegador {
+            position: center;
+            top: 0;
+            background-color: $color-secondary;
+           border: solid 5px black;
+        }
+        }
+    } 
+
+    main{
+        grid-area: main;
+        background-color: rgb(247, 255, 255);
+        padding: 10px;
+        }
+
+        .padre{
+        background-color:$color-secondary;
+        border: black;
+        }
+        
+        .header {
+            display: flex;
+        }
+    
+        .video {
+        display: flex;
+        padding: 5px;
+        align-items: block; 
+        border: solid 1px rgb(121, 123, 124);
+        }
+    }
+}
+
+@keyframes circulo {
+    0% {
+        background-color: rgb(247, 255, 255);
+        border-radius: 0;
+    }
+
+    50%{
+        border-radius: 5px;
+    }
+
+    100% {
+        background-color: rgb(247, 255, 255);
+        border-radius: 100px;
+    }
+}
+
+/* ====*/
+/* Transformaciones */
+
+.contenedor {
+    height: 70vh;
+    width: 100vw;
+    background-color: rgb(247, 255, 255);
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(189, 189, 189);
+    border: solid 2px rgb(189, 189, 189);
+    animation-name: circulo ;
+    animation-iteration-count: 3s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: .1s;
+}
+
+
+.sidebar {
+    display: grid;
+    justify-content: center;
+}
+
+.grid-container {   
+    background-color: rgb(247, 255, 255);
+    background-size: cover;
+    padding:50px ;
+    display: grid;
+    grid-gap:5px; 
+    justify-content: center;
+   
+    div {
+        background-color: $color-secondary;
+        border: solid 1px rgb(0, 0, 0);
+        padding: 5px;
+        background-size: 10px;
+    } 
+} 
+
+//=============
+
+//===========
+//Operaciones
+$ancho: 300px;
+
+div {
+    width: ($ancho*4)-32;
+    justify-content: center;
+}
+
+
+//=============
+//Condicionales
+$animal: arbol;
+
+div {
+    @if $animal = arbol {
+        color: $color-main;
+    } @else if $animal != arbol {
+        color: blue;
+    }
+}
+
+
+
+
+
+//=============
+//Each
+$lista-colores: red, blue, green, yellow;
+
+@each $color in $lista-colores {
+    
+    .color-#{$color}{
+        background-color: $color;
+    }
+}
+
+//=============
+//Mapas
+
+$redes: (
+    twitter: rgb(86, 201, 255),
+    facebook: blue,
+    instagram: violet,
+);
+
+@each $red, $color in $redes {
+    .btn-#{$red} {
+        background-color: $color;
+    }
+}
+
+//=============
+//Extend
+.boton {
+    border: solid 2px #ccc;
+    background-color: rgb(124,124,124);
+}
+.boton-primario {
+    @extend .boton;
+
+    color:red;
+}
+
+
+//=============
+//Mixins
+@mixin size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+    padding: $alto;
+}
+
+.box {
+    @include size (50px, 10px);
+}
