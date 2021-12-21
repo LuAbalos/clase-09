@@ -58,6 +58,14 @@ body {
   font-family: Ubuntu;
   background: #797b7c; }
 
+.productos li {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  margin: 300px; }
+
 /* ====*/
 /* Media queries */
 @media (max-width: 768px) {

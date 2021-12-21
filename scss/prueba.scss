@@ -29,8 +29,21 @@ body {
     "footer footer footer";
     font-family: Ubuntu;
     background: $color-main;
+    
 }
 
+.productos {
+    li{
+        width: 500px; 
+        display:flex; 
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        margin: 300px;
+
+    }
+   
+}
 
 
 /* ====*/
@@ -156,6 +169,7 @@ body {
         background-size: 10px;
     } 
 } 
+
 
 //=============
 
