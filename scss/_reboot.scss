@@ -248,12 +248,12 @@ sup { top: -.5em; }
 // Links
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
+  color: $color-secondary;
+  text-decoration: none;
 
   &:hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    color: $color-secondary;
+    text-decoration: none;
   }
 }
 
