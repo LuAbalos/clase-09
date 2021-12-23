@@ -81,7 +81,9 @@ ul li {
   float: left; }
 
 header {
-  display: flex; }
+  display: flex;
+  width: 600;
+  height: 315; }
   header nav {
     grid-area: nav;
     align-items: center;
@@ -110,7 +112,7 @@ header {
   header .video {
     display: flex;
     padding: 5px;
-    align-items: block;
+    align-items: center;
     border: solid 1px #797b7c; }
 
 @keyframes circulo {
