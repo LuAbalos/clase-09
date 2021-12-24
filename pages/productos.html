@@ -32,96 +32,84 @@
 </head>
 
 <body>
-    <nav class="grid-container">
+  <div class="grid-container">
+    <header>
+      <div class="encabezado">
+        <img style="width: 70px"  src="../public/img/Logo_Lyophar_Chico.png" alt="STI"> <h1>Productos</h1> 
+      </div>
+    </header>
+  
+    <!---Navegador-->
+    <nav>
+      <ul class="navegador">
+        <li>
+          <a href=../index.html style="text-decoration: none"> <span style="color:black;"> Home </a>
+        </li>
+          
+        <li>
+          <a href=servicios.html style="text-decoration: none"> <span style="color:black;"> Servicios </a>
+        </li>
+          
+        <li>
+          <a href=productos.html style="text-decoration: none"> <span> Productos </a>
+        </li>
+          
+        <li>
+          <a href=contacto.html style="text-decoration: none"> <span style="color:black;"> Contacto</a>
+        </li>
+          
+        <li>
+          <a href=quienessomos.html style="text-decoration: none"> <span style="color:black;"> Quienes somos</a>
+        </li>
+      </ul>
+    </nav>
 
-        <div class="encabezado">
-            <img style="width: 70px"  src="../public/img/Logo_Lyophar_Chico.png" alt="STI"> <h1>Productos</h1> 
-        </div>
-
-        <header>
-            <!---Navegador-->
-            <nav>
-                <ul class="navegador">
-
-                    <li>
-                        <a href=../index.html style="text-decoration: none"> <span style="color:#ffffff;"> Home </a>
-                    </li>
-            
-                    <li>
-                        <a href=servicios.html style="text-decoration: none"> <span style="color:#ffffff;"> Servicios </a>
-                    </li>
-            
-                    <li>
-                        <a href=productos.html style="text-decoration: none"> <span style="color:#ffffff;"> Productos </a>
-                    </li>
-            
-                    <li>
-                        <a href=contacto.html style="text-decoration: none"> <span style="color:#ffffff;"> Contacto</a>
-                    </li>
-            
-                    <li>
-                        <a href=quienessomos.html style="text-decoration: none"> <span style="color:#ffffff;"> Quienes somos</a>
-                    </li>
-                </ul>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div class="header">
+    <main>
+      <div class="header">
                 
-                    <h2>Maquinas</h2>
-                    <p>Nuestras maquinas estandares. Todo se puede cambiar. El precio lo manejamos dependiendo lo que nos pidan, para ello contactanos por mail y en menos de 2 dias les estaremos enviando un boceto con su precio.</p>
-            </div>
-            <br>
-           <!--<div>
-                <ul class="productos">
-                    <li>
-                        <img src="../public/img/estufa-espirogenada3.jpeg" alt=> <p>"Estufa de despirogeNado"</p>
-                    </li>
-        
-                    <li>
-                        <img src="../public/img/generador-vapor5.jpeg" alt=> <p>"Generador de vapor puro"</p>
-                    </li>
-        
-                    <li>
-                        <img src="../public/img/osmosis-inversa1.jpeg" alt=> <p>"Ósmosis inversa"</p>
-                    </li>
-        
-                    <li>
-                        <img src="../public/img/cuarto-estabilidad3.jpeg" alt=> <p>"Cámara de estabilidad"</p>
-                    </li>
-                </ul>   
-            </div> -->
-            
-                <div class="row">
-                  <div class="col">
-                    <h3>Estufa despirogenada</h3>
-                    <p>Funcion: El proceso de despirogenado tiene como objetivo la destrucción y remoción de pirógenos. Estos son restos de bacteria presentes en la superficies de vidrio o metal de envases o utensilios, producto de la destrucción mecánica de los microorganismos, en pasos previos de limpieza</p>
-                    <img src="../public/img/estufa-espirogenada1.jpg" alt="Estufa espirogenada"> 
-                  </div>
-
-                  <div class="col">
-                    <h3>Estufa despirogenada 2</h3>
-                    <p>Funcion: La función es igual que la anterior solo que su estructura esta hecha para utilizar diariamente. Es mas resistente y practica. Sus medidas son distintas; ocupa menos superficie pero tiene mas altura</p>
-                    <br>
-                    <img src="../public/img/estufa-espirogenada4.jpg" alt="Estufa espirogenada"> 
-                  </div>
-               
-                  <div class="col">
-                    <h3>Generador de Vapor</h3>
-                    <p>Funcion: Es un sistema formado por una caldera y algunos accesorios, la función principal es transformar un líquido en vapor, usando altas temperaturas. El vapor puede ser utilizado en la generación de energía mecánica y energía eléctrica, y para la alimentación a equipos de procesos.</p>
-                    <img src="../public/img/generador-vapor.jpg" alt="Generador de vapor"> 
-                  </div>
-
-                  <div class="col">
-                    <h3>Generador de Vapor 2</h3>
-                    <p>Funcion: Al igual que el anterior, la función principal es transformar un líquido en vapor, usando altas temperaturas. El vapor puede ser utilizado en la generación de energía mecánica y energía eléctrica, y para la alimentación a equipos de procesos.</p>
-                    <img src="../public/img/liofi-frutas-2.jpg" alt="Liofilizador"> 
+        <h2>Maquinas</h2>
+        <p>Nuestras maquinas estandares. Todo se puede cambiar. El precio lo manejamos dependiendo lo que nos pidan, para ello contactanos por mail y en menos de 2 dias les estaremos enviando un boceto con su precio.</p>
+      </div>
+      <br>
+      <div class="col">
+        <div class="card">
+          <img src="../public/img/generador-vapor.jpg" class="card-img-top" alt="Generador de vapor">
+                    <div class="card-body">
+                      <h5 class="card-title">Generador de Vapor</h5>
+                      <p class="card-text">Funcion: Es un sistema formado por una caldera y algunos accesorios, la función principal es transformar un líquido en vapor, usando altas temperaturas. El vapor puede ser utilizado en la generación de energía mecánica y energía eléctrica, y para la alimentación a equipos de procesos.</p>
+                    </div>
                   </div>
                 </div>
-
-           
+                <br>
+                <div class="col">
+                  <div class="card">
+                    <img src="../public/img/liofi-frutas-2.jpg" class="card-img-top" alt="Liofilizador">
+                    <div class="card-body">
+                      <h5 class="card-title">Generador de Vapor ||</h5>
+                      <p class="card-text">Funcion: Al igual que el anterior, la función principal es transformar un líquido en vapor, usando altas temperaturas. El vapor puede ser utilizado en la generación de energía mecánica y energía eléctrica, y para la alimentación a equipos de procesos.</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="col">
+                  <div class="card">
+                    <img src="../public/img/estufa-espirogenada1.jpg" class="card-img-top" alt="Estufa espirogenada">
+                    <div class="card-body">
+                      <h5 class="card-title">Estufa despirogenada</h5>
+                      <p class="card-text">El proceso de despirogenado tiene como objetivo la destrucción y remoción de pirógenos. Estos son restos de bacteria presentes en la superficies de vidrio o metal de envases o utensilios, producto de la destrucción mecánica de los microorganismos, en pasos previos de limpieza</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="col">
+                  <div class="card">
+                    <img src="../public/img/estufa-espirogenada4.jpg" class="card-img-top" alt="Estufa espirogenada">
+                    <div class="card-body">
+                      <h5 class="card-title">Estufa despirogenada ||</h5>
+                      <p class="card-text">Funcion: La función es igual que la anterior solo que su estructura esta hecha para utilizar diariamente. Es mas resistente y practica. Sus medidas son distintas; ocupa menos superficie pero tiene mas altura.</p>
+                    </div>
+                  </div>
+                </div>
         </main>
         
        

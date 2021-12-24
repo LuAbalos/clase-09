@@ -18,7 +18,7 @@
     <meta name="description" content="Especialista y aliado estratégico en soluciones tecnológicas de maquinaria, equipos, herramientas e ingeniería para las industrias Farmacéutica, Cosmética, Cannabis, Química y de Alimentos">
     
     <!--Favicon-->
-    <link rel="shortcut icon" href="public/img/Logo_Lyophar_Chico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/img/favicon-16x16.png" type="image/x-icon">
     
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,83 +32,58 @@
 </head>
 
 <body>
-    <nav class="grid-container">
-
-        <div class="encabezado">
-            <img style="width: 70px"  src="public/img/Logo_Lyophar_Chico.png" alt="STI"> <h1>Home</h1> 
-        </div>
-
+    <div class="grid-container" id="container">
         <header>
-            <!---Navegador-->
-            <nav>
-                <ul class="navegador" >
-                    
-                    <li class="link-navegador">
-                        <a href=index.html style="text-decoration: none"> <span style="color:#ffffff;"> Home </span></a>
-                    </li>
-            
-                    <li>
-                        <a href=pages/servicios.html style="text-decoration: none"> <span style="color:#ffffff;"> Servicios </a>
-                    </li>
-            
-                    <li>
-                        <a href=pages/productos.html style="text-decoration: none"> <span style="color:#ffffff;"> Productos </a>
-                    </li>
-            
-                    <li>
-                        <a href=pages/contacto.html style="text-decoration: none"> <span style="color:#ffffff;"> Contacto</a>
-                    </li>
-            
-                    <li>
-                        <a href=pages/quienessomos.html style="text-decoration: none"> <span style="color:#ffffff;"> Quienes somos</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="encabezado">
+                <img style="width: 70px"  src="public/img/Logo_Lyophar_Chico.png" alt="STI"> <h1>Home</h1> 
+            </div>
         </header>
+        
+        <!---Navegador-->
+        <nav>
+            <ul class="navegador">         
+                <li>
+                    <a href=index.html style="text-decoration: none"> <span> Home </span></a>
+                </li>
+                
+                <li>
+                    <a href=pages/servicios.html style="text-decoration: none"> <span style="color:black;"> Servicios </a>
+                </li>
+                
+                <li>
+                    <a href=pages/productos.html style="text-decoration: none"> <span style="color:black;"> Productos </a>
+                </li>
+                
+                <li>
+                    <a href=pages/contacto.html style="text-decoration: none"> <span style="color:black;"> Contacto</a>
+                </li>
+                
+                <li>
+                    <a href=pages/quienessomos.html style="text-decoration: none"> <span style="color:black;"> Quienes somos</a>
+                </li>
+            </ul>
+        </nav>
 
+        <main>        
 
-        <main>
-            <div>
-                <img src="public/img/estufa-espirogenada2.jpg" class="rounded mx-auto d-block" alt="...">
-            </div>
             
-
-            <!--Carousel-->
-
-            <!--<div class=primer-bloque-home>
-            <div class="carousel">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img style= "width: 30px;"src="public/img/estufa-espirogenada1.jpg" class="d-block w-100" alt="Estufa espirogenada">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="public/img/estufa-espirogenada2.jpg" class="d-block w-100" alt="Cuarto de estabilida">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="public/img/osmosis-inversa-1.jpg" class="d-block w-100" alt="Osmosis inversa">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="public/img/generador-vapor.jpg" class="d-block w-100" alt="Generador de vapor">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+            <div class="img-centrada">
+                <img src="public/img/generador-vapor.jpg" class="img-fluid" alt="centrifugador">
             </div>
-         </div> --->
+
+            <h1>Historia</h1>
+
+            <p>La empresa fue fundada en el año 1990. Llevamos mas de 30 años acompañando a cada empresa que confía en nosotros para la creación de maquinarias. Trabajamos con organizaciones de diversas partes del mundo. Desde america hasta europa. Si estas buscando una maquinaria especifica para sus necesidades nos adaptamos a ellas. </p>
+            <a href=pages/contacto.html style="text-decoration: none"> <span style="color:black;"> Clickea aca para contactarnos</a>
 
             <!--Seccion 1-->
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/wxQAppVDWM0"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
+            <iframe src="https://www.youtube.com/embed/wxQAppVDWM0"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             
+
+            
+
             <!--Seccion 2-->
             <div style="display: grid; align-items: center; border: solid 1px;">
                 <div>
@@ -116,24 +91,26 @@
                     <ol>
                         <li>Tomarse la temperatura</li>
                         <li>Quitarse calzado y la mayor cantidad de ropa posible</li>
-                            <li>Poner alcohol en las manos</li>
-                            <li>Vestirse con los elementos adecuados</li>
-                            <li>Pasar por debajo del esterilizador</li>
-                        </ol>
-            </div>
+                        <li>Poner alcohol en las manos</li>
+                        <li>Vestirse con los elementos adecuados</li>
+                        <li>Pasar por debajo del esterilizador</li>
+                    </ol>
+                </div>
+
+           
         </main> 
 
-        
+
+            
 
         <footer>
-           <div>
-
+            <div class= "footer">
                 <ul class="redes-sociales">
                     <li>
                         <img style="width: 30px" src="public/img/facebook.ico"  alt="Facebook"> 
                         <a class="links links-primary" href="https://www.facebook.com/sctpharma" target="_blank">Facebook</a>
                     </li>
-            
+                
                     <li>
                         <img style="width: 30px" src="public/img/linkedin.ico" alt="Linkedin"> 
                         <a class="links links-primary" href="https://www.linkedin.com/company/sct-sa/mycompany/" target="_blank">Linked-in</a>
